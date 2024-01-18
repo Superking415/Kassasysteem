@@ -1,0 +1,52 @@
+:root {
+    --basic-font-fam: Arial, Helvetica, sans-serif;
+    --smooth-transition-ms: 600ms;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    text-align: center;
+    
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tafelnr {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: burlywood;
+    color: black;
+    border-radius: 50%;
+    transition: background-color var(--smooth-transition-ms);
+}
+
+.tafelnr:hover {
+    background-color: lightblue;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="number"] {
+    font-size: 18px;
+    width: 50px;
+}
